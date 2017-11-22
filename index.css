@@ -1,0 +1,45 @@
+/*默认值*/
+
+ul{
+	list-style: none;
+}
+
+[role='select']{width: 160px;height:34px;display:inline-block;background: #FFF;border:1px solid #e0e0e0;border-radius: 2px;cursor:pointer;}
+[role='select']:hover{
+	border-color: #f80;
+	box-shadow: rgba(248, 15, 128, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(248, 15, 128, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(248, 15, 128, 0.1) 0px 0px 8px;
+	transition: all .5s;
+	-moz-transition: all .5s;	/* Firefox 4 */
+	-webkit-transition: all .5s;	/* Safari 和 Chrome */
+	-o-transition: all .5s;	/* Opera */
+}
+.select_focused[role='select']{
+	border-color: #f80;
+	box-shadow: rgba(248, 15, 128, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(248, 15, 128, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(248, 15, 128, 0.1) 0px 0px 8px;  
+}
+
+.logo_arr{
+	transition: all .2s;
+	-moz-transition: all .2s;	/* Firefox 4 */
+	-webkit-transition: all .2s;	/* Safari 和 Chrome */
+	-o-transition: all .2s;	/* Opera */
+}
+
+.select_focused .logo_arr{
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); 	/* IE 9 */
+	-moz-transform:rotate(180deg); 	/* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+	-o-transform:rotate(180deg); 	/* Opera */
+}
+
+[role='select'] ul{display: none}
+.option_component > ul{width:198px;position:absolute;box-shadow: 0 1px 6px rgba(0,0,0,.2);background-color: #FFF;padding: 0;margin:0;border-radius: 4px;}
+.option_component{position: absolute;}
+.option_component li{line-height:36px;padding-left:10px; height: 36px;background:#FFF;cursor:pointer;}
+.option_component li:hover{background-color: #ecf6fd}
+.option_component li[select]{background-color: #f7f7f7}
